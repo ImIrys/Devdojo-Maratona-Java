@@ -26,8 +26,22 @@ public class AulaTiposPrimitivos {
         Não é uma boa prática.
          */
 
+        /* String:
+         - É uma classe, então começa com a primeira letra em maiúsculo.
+         - Precisa de um identificador.
+         - Texto em Aspas Duplas.
+         - Não é um tipo primitivo.
+         - Tipo de referência.
+         - Pode ter uma grande texto. Não há limites.
+         */
+
+        String texto = "Ser feliz ao realizar a jornada pode ser muito melhor do que chegar ao destino com sucesso. - Jordan Peterson.";
+
         System.out.println("A idade é " +idadeIrys+ " anos");
         System.out.println(caractereA);
         System.out.println(caractereU);
+        System.out.println(texto);
+
+
     }
 }
