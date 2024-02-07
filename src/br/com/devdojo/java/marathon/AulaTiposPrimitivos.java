@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.introducao;
+package br.com.devdojo.java.marathon;
 
 public class AulaTiposPrimitivos {
     public static void main(String[] args) {
@@ -41,7 +41,5 @@ public class AulaTiposPrimitivos {
         System.out.println(caractereA);
         System.out.println(caractereU);
         System.out.println(texto);
-
-
     }
 }
