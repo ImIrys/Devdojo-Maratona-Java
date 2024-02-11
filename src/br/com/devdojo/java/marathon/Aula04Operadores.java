@@ -2,7 +2,7 @@ package br.com.devdojo.java.marathon;
 
 public class Aula04Operadores {
     public static void main(String[] args) {
-        //Operadores Aritméticos: sempre retornam um valor nunérico
+        // (1) Operadores Aritméticos: sempre retornam um valor nunérico
         // + - / *
 
         int numero1 = 10;
@@ -26,11 +26,11 @@ public class Aula04Operadores {
         System.out.println("A multiplicação entre " +numero1+ " e " +numero2+ " é " +multiplicacao);
         */
 
-        //Operador de Resto %
+        // (2) Operador de Resto %
         int resto = 20 % 2; // O Resto de um número dividido por 2 - Se for 0 = =é uma valor PAR, se não for, é um valor ÍMPAR.
         System.out.println(resto);
 
-        // Operadores Lógicos: Sempre retornam um valor booleano TRUE ou FALSE
+        // (3) Operadores Lógicos: Sempre retornam um valor booleano TRUE ou FALSE
         // < > <= >= == !=
 
         boolean isDezMaiorQueVinte = 10 > 20;
@@ -62,7 +62,7 @@ public class Aula04Operadores {
         System.out.println("isDentroDaLeiMenorQueTrinta " + isDentroDaLeiMenorQueTrinta);
 
         /* OR ||
-         BAsta uma das condições ser verdadeira,
+         Basta uma das condições ser verdadeira,
          que todo o resultado será verdadeiro.
          */
         double valorTotalContaCorrente = 200;
@@ -71,5 +71,48 @@ public class Aula04Operadores {
 
         boolean isPlayStationCincoCompravel = valorTotalContaCorrente > valorPlayStationCinco || valorTotalContaPoupanca > valorPlayStationCinco;
         System.out.println("isPlayStationCincoCompravel " + isPlayStationCincoCompravel);
+
+        /* (4) Operadores de Atribuição
+         Atribue algo à variável.
+         =
+         +=
+         -=
+         *=
+         /=
+         %=
+         */
+
+        double bonus = 1800;
+        bonus += 1000;  // o mesmo que dizer bonus = bonus + 1000;
+        bonus -= 1000;  // o mesmo que dizer bonus = bonus - 1000;
+        bonus *= 2; // o mesmo que dizer bonus = bonus * 2;
+        bonus /= 2; // o mesmo que dizer bonus = bonus / 2;
+        bonus %= 2; // o mesmo que dizer bonus = bonus % 2; Vai pegar o resto de 1800/2
+        System.out.println(bonus);
+
+        // ++ --
+        int contador = 0;
+
+        // Colocando os operadores DEPOIS, primeiro ele vai EXECUTAR e depois INCREMENTAR
+        contador += 1; // contador = contador + 1;
+        contador++; // contador += 1; // contador = contador + 1;
+        contador--; // contador -= 1; // contador = contador - 1;
+
+        // Colocando os operadores ANTES, primeiro ele vai INCREMENTAR e depois EXECUTAR.
+        ++contador;
+        --contador;
+
+        int contador2 = 0;
+        System.out.println(++contador2);
+
+
+
+
+
+
+
+
+
+
     }
 }
