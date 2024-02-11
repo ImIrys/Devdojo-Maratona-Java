@@ -34,23 +34,42 @@ public class Aula04Operadores {
         // < > <= >= == !=
 
         boolean isDezMaiorQueVinte = 10 > 20;
-        System.out.println("isDezMaiorQueVinte " +isDezMaiorQueVinte);
+        System.out.println("isDezMaiorQueVinte " + isDezMaiorQueVinte);
         boolean isDezMenorQueVinte = 10 < 20;
-        System.out.println("isDezMenorQueVinte " +isDezMenorQueVinte);
+        System.out.println("isDezMenorQueVinte " + isDezMenorQueVinte);
         boolean isDezIgualQueVinte = 10 == 20;
-        System.out.println("isDezIgualQueVinte " +isDezIgualQueVinte);
+        System.out.println("isDezIgualQueVinte " + isDezIgualQueVinte);
         boolean isDezDiferenteDeVinte = 10 != 20;
-        System.out.println("isDezDiferenteDeVinte " +isDezDiferenteDeVinte);
+        System.out.println("isDezDiferenteDeVinte " + isDezDiferenteDeVinte);
 
-        // 3 Tipos de Operadores Lógicos: && (AND) // (OR)  ! (NOT)
+        /*
+         3 Tipos de Operadores Lógicos:
+         && (AND)
+         || (OR)
+         ! (NOT)
+         */
 
+        /* AND &&
+         É necessário ter todas as condições como verdadeiras
+         para que o resultado final seja verdadeiro.
+         */
         int idade = 29;
         float salario = 3500F;
         boolean isDentroDaLeiMaiorQueTrinta = idade >= 30 && salario >= 4612;
         boolean isDentroDaLeiMenorQueTrinta = idade < 30 && salario >= 3381;
-        System.out.println("isDentroDaLeiMaiorQueTrinta " +isDentroDaLeiMaiorQueTrinta);
-        System.out.println("isDentroDaLeiMenorQueTrinta " +isDentroDaLeiMenorQueTrinta);
 
+        System.out.println("isDentroDaLeiMaiorQueTrinta " + isDentroDaLeiMaiorQueTrinta);
+        System.out.println("isDentroDaLeiMenorQueTrinta " + isDentroDaLeiMenorQueTrinta);
 
+        /* OR ||
+         BAsta uma das condições ser verdadeira,
+         que todo o resultado será verdadeiro.
+         */
+        double valorTotalContaCorrente = 200;
+        double valorTotalContaPoupanca = 10000;
+        float valorPlayStationCinco = 5000F;
+
+        boolean isPlayStationCincoCompravel = valorTotalContaCorrente > valorPlayStationCinco || valorTotalContaPoupanca > valorPlayStationCinco;
+        System.out.println("isPlayStationCincoCompravel " + isPlayStationCincoCompravel);
     }
 }
