@@ -1,0 +1,86 @@
+Aula 20: Estruturas Condicionais - Parte 1:
+
+-> IF <-
+- IF = SE
+- Só executa se a expressão/resultado da expressão dentro do parênteses for VERDADEIRO/TRUE
+- Sintaxe:
+    if (true) {
+    System.out.println("Dentro do if");
+    }
+- O resultado ou o que colocar dentro desses parênteses precisa ser um BOOLEANO
+-Exemplo 1: Saber se o usuário pode ou não comprar bebida alcoólica:
+        int idade = 15;
+
+        if (idade >= 18) {
+            System.out.println("Usuário maior de idade. Permitido comprar bebida alcoólica.");
+        }
+        else {
+            System.out.println("Usuário menor de idade. Não é permitido a venda de bebidas alcoólicas para menores de idade.");
+        }
+
+- Tbm é possível fazer a comparação da seguinte maneira:
+    - O valor booleano será alocado em memória na isAutorizadoComprarBebida
+        boolean isAutorizadoComprarBebida = idade >= 18;
+        if (isAutorizadoComprarBebida) {
+            System.out.println("Usuário maior de idade. Permitido comprar bebida alcoólica.");
+        } else {
+            System.out.println("Usuário menor de idade. Não é permitido a venda de bebidas alcoólicas para menores de idade.");
+        }
+
+*Operador de negação*
+- Existe uma opção alternativa ao uso do ELSE:
+- Essa opção sempre fará a análise.
+    - Se não isAutorizadoComprarBebida então imprima Não autorizado a comprar bebida alcoólica.
+        boolean isAutorizadoComprarBebida = idade >= 18;
+           if (!isAutorizadoComprarBebida){ //O mesmo que escrever isAutorizadoComprarBebida == false
+            System.out.println("Não autorizado a comprar bebida alcoólica.");
+
+======================================================================================================================================================
+
+Aula 21: Estruturas Condicionais - Parte 2: ELSE IF
+
+-> ELSE <-
+- ELSE = se não;
+- Precisa estar dentro do seu IF;
+- Executado automaticamente baseado na condição dentro do IF;
+- Instrução independente, será executado independente do IF ser verdadeiro ou não;
+
+---Quando se tem mais de 2 condições---
+
+*Exemplo: Definir a categoria de futebol.*
+-Jogadores menores de 15 anos são da categoria infantil;
+-Jogadores entre 15 e 18, fazem parte da categoria juvenil;
+-Jogadores maiores de 18, fazem parte da categoria adulto.
+
+
+int idade = 16;
+
+        if (idade < 15) {
+            System.out.println("Categoria Infantil");
+        } else if (idade >= 16 && idade < 18) {
+            System.out.println("Categoria Juvenil");
+        } else {
+            System.out.println("Categoria Adulto");
+        }
+
+- Tbm pode ser feito da seguinte maneira:
+
+int idade = 16;
+String = categoria;
+        if (idade < 15) {
+            categoria = "Categoria Infantil";
+        } else if (idade >= 16 && idade < 18) {
+            categoria = "Categoria Juvenil";
+        } else {
+            categoria = "Categoria Adulto";
+        }
+
+    System.out.println(categoria);
+
+----Escopos dentro do JAVA----
+
+- Baseado onde tem o bloco de código entre as chaves;
+*ESCOPO LOCAL*
+- Todas as variáveis que estão num bloco que não é o bloco da classe (fora de qualquer método), que estão dentro de métodos;
+- Todas as variáveis de Escopo Local - VARIÁVEIS LOCAIS - precisam ser inicializadas antes que tente executá-las.
+
