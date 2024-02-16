@@ -84,3 +84,67 @@ String = categoria;
 - Todas as variáveis que estão num bloco que não é o bloco da classe (fora de qualquer método), que estão dentro de métodos;
 - Todas as variáveis de Escopo Local - VARIÁVEIS LOCAIS - precisam ser inicializadas antes que tente executá-las.
 
+======================================================================================================================================================
+
+22 - Estruturas Condicionais pt 03 - Operador ternário
+
+- Criado no JAVA para simplificar condições IF-ELSE;
+
+*Exemplo: Decidir se farei uma doação de R$ 500,00*
+- Salário acima de R$ 5.000,00 = farei a doação de R$ 500,00.
+- Exibir a mensagem fazer doação ou não.
+
+// Doar se salário > 5000
+        double salario = 3000;
+        String mensagemDoar = "Vou conseguir doar 500,00";
+        String mensagemNaoDoar = "Não posso doar nada.";
+        String resultado;
+
+        if (salario > 5000) {
+            resultado = mensagemDoar;
+        } else {
+            resultado = mensagemNaoDoar;
+        }
+        System.out.println(resultado);
+
+- Estamos criando um IF-ELSE para guardar um valor dentro de uma variável;
+- Quando se tem esse caso em especifico podemos usare o OPERADOR TERNÁRIO.
+
+----Operador Ternário----
+- Deve ser usado em situações de IF-ELSE simples;
+- Precisa pegar um resultado e colocar num lugar;
+- Sempre vai associar um valor diretamente para uma variável ou retorno de um método;
+- Sintaxe: dividio em 3 partes: (condicao) ? verdadeiro : falso;
+EXEMPLO:
+        // Doar se salário > 5000
+        double salario = 6000;
+        String mensagemDoar = "Vou conseguir doar 500,00";
+        String mensagemNaoDoar = "Não posso doar nada.";
+        // (condicao) ? verdadeiro : falso;
+        String resultado = salario > 5000 ? mensagemDoar : mensagemNaoDoar;
+
+        System.out.println(resultado);
+    }
+
+- Tbm podemos simplificar mais ainda o nosso cósigo:
+
+// Doar se salário > 5000
+        double salario = 6000;
+        // (condicao) ? verdadeiro : falso;
+        String resultado = salario > 5000 ? "Vou conseguir doar 500,00" : "Não posso doar nada.";
+
+        System.out.println(resultado);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
