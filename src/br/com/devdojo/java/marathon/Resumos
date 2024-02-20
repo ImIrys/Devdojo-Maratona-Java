@@ -90,7 +90,8 @@ String = categoria;
 
 - Criado no JAVA para simplificar condições IF-ELSE;
 
-*Exemplo: Decidir se farei uma doação de R$ 500,00*
+*EXERCÍCIO*
+// Decidir se farei uma doação de R$ 500,00*
 - Salário acima de R$ 5.000,00 = farei a doação de R$ 500,00.
 - Exibir a mensagem fazer doação ou não.
 
@@ -114,7 +115,7 @@ String = categoria;
 - Deve ser usado em situações de IF-ELSE simples;
 - Precisa pegar um resultado e colocar num lugar;
 - Sempre vai associar um valor diretamente para uma variável ou retorno de um método;
-- Sintaxe: dividio em 3 partes: (condicao) ? verdadeiro : falso;
+- Sintaxe: dividido em 3 partes: (condicao) ? verdadeiro : falso;
 EXEMPLO:
         // Doar se salário > 5000
         double salario = 6000;
@@ -126,7 +127,7 @@ EXEMPLO:
         System.out.println(resultado);
     }
 
-- Tbm podemos simplificar mais ainda o nosso cósigo:
+- Tbm podemos simplificar mais ainda o código:
 
 // Doar se salário > 5000
         double salario = 6000;
@@ -136,15 +137,19 @@ EXEMPLO:
         System.out.println(resultado);
     }
 
+======================================================================================================================================================
 
+23 - Estruturas Condicionais pt 04 - Tabela Verdade e exercício
 
+----Tabela Verdade----
+- Define o que teremos coo resultado de uma expressão booleana quando se tem mais de uma condição.
+-- E/AND &&
+- TODAS as instruções que temos no IF precisam ser verdadeiras para que o resultado final seja verdadeiro.
 
+-- OU/OR ||
+- Se UMA das instruções que temos no IF for verdadeira, o resultado será verdadeiro.
 
-
-
-
-
-
-
+*EXERCÍCIO*
+// Dado um determinado salário anual, calcule o valor do imposto a ser pago.
 
 
