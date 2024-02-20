@@ -152,4 +152,56 @@ EXEMPLO:
 *EXERCÍCIO*
 // Dado um determinado salário anual, calcule o valor do imposto a ser pago.
 
+        double salarioAnual = 70000;
+        double primeiraFaixa = 9.70 / 100;
+        double segundaFaixa = 37.35 / 100;
+        double terceiraFaixa = 49.50 / 100;
+        double valorImposto;
+
+        if (salarioAnual <= 34712){
+            valorImposto = salarioAnual * primeiraFaixa;
+        } else if (salarioAnual >= 34713 && salarioAnual <= 68507) {
+            valorImposto = salarioAnual * segundaFaixa;
+        } else {
+            valorImposto = salarioAnual * terceiraFaixa;
+        }
+
+        System.out.println(valorImposto);
+
+======================================================================================================================================================
+
+25 - Estruturas Condicionais pt 06 - Switch
+
+---- SWITCH ----
+- Forma mais organizada de utilizar CONDICIONAIS SIMPLES para fazer uma pequena escolha.
+- Sintaxe do SWITCH:
+// valores dentro do switch - tipos de variáveis: char, int, byte, short, enum, String.
+
+switch (dia){
+    case 1:
+        System.out.println("Domingo");
+        break;
+    case 2:
+        System.out.println("Segunda");
+        break;
+    case 3:
+        System.out.println("Terça");
+        break;
+    case 4:
+        System.out.println("Quarta");
+        break;
+    case 5:
+        System.out.println("Quinta");
+        break;
+    case 6:
+        System.out.println("Sexta");
+        break;
+    case 7:
+        System.out.println("Sábado");
+        break;
+
+- Uso da opção padrão: default
+default:
+        System.out.println("Opção Inválida");
+        break;
 
