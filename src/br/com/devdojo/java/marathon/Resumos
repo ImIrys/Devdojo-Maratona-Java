@@ -170,7 +170,6 @@ EXEMPLO:
 
 ======================================================================================================================================================
 
-<<<<<<< HEAD
 25 - Estruturas Condicionais pt 06 - Switch
 
 ---- SWITCH ----
@@ -205,6 +204,60 @@ switch (dia){
 default:
         System.out.println("Opção Inválida");
         break;
-=======
->>>>>>> 62e2507e9e10657455a56efc516b499c52dfed0b
+
+======================================================================================================================================================
+
+27 - Estruturas de Repetição pt 01 - Laços de repetição while, do while, for
+
+- Estruturas de repetição precisam da informação ATÉ QUANDO/QUANTO precisa ficar contando, executando em repetição.
+- Usa-se uma condição
+- Existem 3 opções para iterar sobre alguma coisa:
+1) While
+- SINTAXE:
+
+while(){
+}
+
+// O resultado dentro da expressão precisa ser um valor booleano, assim como no IF.
+// A expressão precisa ser de COMPARAÇÃO
+// A expressão precisa ser verdadeira para o while ser executado
+// O estado da variável precisa ser alterado dentro do escopo do WHILE, para não ficar num loop infinit
+
+*Exemplo*
+ int count = 0;
+ while (count < 10){
+     System.out.println(count);
+     count += 1; // count = count + 1;
+
+2) Do While
+- A expressão será executada pelo menos 1 vez, independente da condição ser TRUE ou FALSE;
+- Usa-se uma condição
+- SINTAXE:
+do {
+// o que quero que seja feito
+} while
+
+*Exemplo:*
+
+int count = 0;
+do {
+    System.out.println(count);
+} while (count < 10)
+
+3) For
+- Mais utilizado para contagens;
+- Usa-se índices, enquanto no WHILE se usa condição.
+
+- SINTAXE:
+// na primeira parte declaração de variáveis (variável local precisa ser inicializada antes de ser utilizada)
+// na segunda parte se faz a comparação até onde o laço de repetição seja executado,
+// na terceira parte, como essa variável vai alterar o status.
+
+for (int i=0; i < 10; i++) {
+     System.out.println("For " +i);
+}
+
+-- int i=0 será executado apenas 1 vez;
+-- i < 10 será executado todas as vezes em que o laço estiver sendo executado;
+-- i++ vai incrementar 1 em todas as vezes que i < 10 for falso.
 
