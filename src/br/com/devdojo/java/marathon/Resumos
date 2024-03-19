@@ -266,3 +266,26 @@ for (int i=0; i < 10; i++) {
 31 - Estruturas de Repetição pt 05 - Continue
 
 -
+
+======================================================================================================================================================
+
+VETORES
+
+32 - Arrays - Parte 01
+
+-São considerados objetos na memória;
+-Quando temos que trabalhar com determinada quantidade valores, relacionado ao mesmo tipo de variável.
+-Arrays (vetores) funcionam como referência um espaço de memória que pode ter mais de um valor
+-Tipo de variavel usada para declarar é um tipo reference. Podem ser iniciadas com valor nulo;
+-Sintaxe:
+tipo[] nome;
+tipo nome[];
+
+int[] idades = new int[3];
+
+- A variável por ser reference pode ser iniciada com null, assim como a variável do tipo String.
+- O indice sempre começa de 0 e vai até a posição desejada.
+
+idades[0] = 31;
+idades[1] = 32;
+idades[2] = 30;
