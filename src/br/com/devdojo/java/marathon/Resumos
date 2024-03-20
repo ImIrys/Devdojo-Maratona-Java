@@ -281,7 +281,10 @@ VETORES
 tipo[] nome;
 tipo nome[];
 
+Ao criar ARRAYS Temos:
+Variável do lado esquerdo é do tipo REFERENCE: Variavel do lado direito é um OBJETO
 int[] idades = new int[3];
+
 
 - A variável por ser reference pode ser iniciada com null, assim como a variável do tipo String.
 - O indice sempre começa de 0 e vai até a posição desejada.
@@ -289,3 +292,16 @@ int[] idades = new int[3];
 idades[0] = 31;
 idades[1] = 32;
 idades[2] = 30;
+
+=============================================================================
+
+33 - Arrays - Parte 02
+
+Padrão de inicialização de tipos primitivos:
+byte, short, int, long, float e double o valor é 0.
+char tem o unicode que representa um espaço em branco '\u0000' ' '
+boolean padrão é false
+String padrão é null
+
+
+
