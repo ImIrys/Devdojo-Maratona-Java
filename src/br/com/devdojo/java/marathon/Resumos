@@ -303,13 +303,37 @@ char tem o unicode que representa um espaço em branco '\u0000' ' '
 boolean padrão é false
 String padrão é null
 
-<<<<<<< HEAD
+
 =============================================================================
 
 34 - Arrays - Parte 03 - Como iterar e pegar os valores dentro do arrays.
 
-- O tamanho do Array não muda dinamicamente, temos que alterá-lo ma forma manual e compilar o programa novamente.]
-=======
->>>>>>> origin
+- O tamanho do Array não muda dinamicamente, temos que alterá-lo na forma manual e compilar o programa novamente.]
 
+=============================================================================
+
+35 - Arrays pt 04 - Foreach
+- Formas de iniciar os Arrays:
+
+1ª Forma de iniciar um array temos que declará-lo
+int[] numeros = new int[3];
+
+2ª Forma de iniciar os arrays com o tamanho e diretamente os valores:
+int[] numeros2 = {1,2,3,4,5};
+
+3ª Forma de iniciar um array:
+int[] numeros3 = new int[]{1,2,3,4,5};
+
+- Formas de imprimir o Arrays:
+1ª Forma: Usando o FOR
+for (int i = 0; i < numeros3.length; i++) {
+            System.out.println(numeros3[i]);
+        }
+
+2ª Forma: Usando o Foreach
+Esse FOR não dá para acessar índices específicos;
+Sintaxe: dizer o tipo do array.
+for(int num:numeros3){
+System.out.println(num);
+}
 
