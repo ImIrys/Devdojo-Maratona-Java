@@ -303,10 +303,13 @@ char tem o unicode que representa um espaço em branco '\u0000' ' '
 boolean padrão é false
 String padrão é null
 
+<<<<<<< HEAD
 =============================================================================
 
 34 - Arrays - Parte 03 - Como iterar e pegar os valores dentro do arrays.
 
 - O tamanho do Array não muda dinamicamente, temos que alterá-lo ma forma manual e compilar o programa novamente.]
+=======
+>>>>>>> origin
 
 
