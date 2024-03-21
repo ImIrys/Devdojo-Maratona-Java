@@ -339,7 +339,7 @@ System.out.println(num);
 
 =============================================================================
 
-36 - Arrays Multidimensionais pt 01
+36 e 37 - Arrays Multidimensionais pt 01 e pt 02
 
 - São Arrays de arrays.
 - Arrays linkados e com isso navegar pelas posições que eles possuem.
@@ -350,3 +350,22 @@ Para criar arrays multidimensionais:
 
 Usando o foreach para imprimir array multidimensioanl:
 - Pega cada uma das posições que temos e cria uma variável de referência
+
+=============================================================================
+
+38 - Arrays Multidimensionais pt 01
+
+Inicialização de Arrays:
+
+1ª Forma:
+arrayInt[1] = new int[]{1,2,3};
+
+2ª Forma:
+Criar um array com os valores que desejo e depois faezr referência a ele:
+public static void main(String[] args) {
+        int[] array = {1,2,3};
+
+        arrayInt[1] = array;
+
+3ª Forma:
+int[][] arrayInt2 = {{0,0},{1,2,3},{1,2,3,4,5,6}};
