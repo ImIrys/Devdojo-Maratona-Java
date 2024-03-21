@@ -347,3 +347,6 @@ System.out.println(num);
 Para criar arrays multidimensionais:
         int[][] dias = new int[3][3];
 
+
+Usando o foreach para imprimir array multidimensioanl:
+- Pega cada uma das posições que temos e cria uma variável de referência
