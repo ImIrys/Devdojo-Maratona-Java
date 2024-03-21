@@ -337,3 +337,13 @@ for(int num:numeros3){
 System.out.println(num);
 }
 
+=============================================================================
+
+36 - Arrays Multidimensionais pt 01
+
+- São Arrays de arrays.
+- Arrays linkados e com isso navegar pelas posições que eles possuem.
+
+Para criar arrays multidimensionais:
+        int[][] dias = new int[3][3];
+
