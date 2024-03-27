@@ -1,4 +1,4 @@
-package br.com.devdojo.java.marathon;
+package br.com.devdojo.java.marathon.introducao;
 
 public class Aula0EstruturasRepeticao01 {
     public static void main(String[] args) {

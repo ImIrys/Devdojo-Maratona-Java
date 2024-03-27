@@ -1,4 +1,4 @@
-package br.com.devdojo.java.marathon;
+package br.com.devdojo.java.marathon.introducao;
 
 import javax.sound.midi.Soundbank;
 

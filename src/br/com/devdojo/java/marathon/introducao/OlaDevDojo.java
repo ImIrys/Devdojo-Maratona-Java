@@ -1,6 +1,6 @@
 //Organizando o código em pacotes
 
-package br.com.devdojo.java.marathon;
+package br.com.devdojo.java.marathon.introducao;
 
 /**
  * Comentário <b>javadoc</b>: comentário oficial,

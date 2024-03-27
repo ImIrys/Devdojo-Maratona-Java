@@ -1,4 +1,4 @@
-package br.com.devdojo.java.marathon;
+package br.com.devdojo.java.marathon.introducao;
 
 public class Aula07Arrays04 {
     public static void main(String[] args) {

@@ -369,3 +369,33 @@ public static void main(String[] args) {
 
 3ª Forma:
 int[][] arrayInt2 = {{0,0},{1,2,3},{1,2,3,4,5,6}};
+
+=============================================================================
+
+39 - Orientação Objetos pt 01 - Introdução classes pt 01
+
+*Variáveis do tipo primitivo:*
+--Não possuem relação entre si.
+
+*Variáveis do tipo objeto (reference):*
+--Objeto--
+-Diferentes dados agrupados dentro de um único espaço em memória.
+-Possuem um vínculo, um relacionamento entre eles.
+-Para criar objetos sempre usar a palavra new seguido do nome do objeto a ser criado.
+-Exemplo:
+/Variável de referência do tipo estudante.
+/Para criar objetos sempre usar a palavra new.
+Estudante estudante = new Estudante();
+
+
+--Classe--
+-Representa algo do mundo real com funcionalidades em comum, que dá origem ao objeto.
+-Podem ter um public static void main, mas não será utilizado aqui.
+-Chamadas de domínio, algo que representa um mapeamento no mundo real, não possuem método main.
+-É um Template que dará origem a um objeto. Podem ter 2 coisas: Atributos = características da classe (nome, idade e sexo). Métodos = comportamentos.
+
+Exemplo:
+Classe Carro -> Atributos: marca, modelo, ano de fabricação.
+Classe Funcionario -> salario, matricula, cpf.
+
+-
