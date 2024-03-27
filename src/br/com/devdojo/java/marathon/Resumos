@@ -398,4 +398,13 @@ Exemplo:
 Classe Carro -> Atributos: marca, modelo, ano de fabricação.
 Classe Funcionario -> salario, matricula, cpf.
 
--
+=============================================================================
+
+40 - Orientação Objetos pt 02 - Introdução classes pt 02
+
+- Quando se cria um atributo diretamente numa classe, os valores de inicialização serão o padrão aplicados a ele.
+Podemos utilizar mesmo que não tenha sido inicializado.
+Exemplo: public class Estudante {
+             public String nome; // Posso definir,inicializar diretamente, mas em todos os objetos, em 'nome' receberão o mesmo valor.
+             public int idade;
+             public char sexo;
