@@ -446,3 +446,16 @@ OBS: O código está fazendo 2 coisas:
 2º) Está representando a execução desse estudante
 
 Ao criar uma classe específica para teste, deixamos o código coeso.
+
+=============================================================================
+
+42 - Orientação Objetos - Exercício Classes
+
+Criar uma classe carro com os seguintes atributos
+
+Nome
+Modelo
+ano
+
+Em seguida, criar dois objetos distintos e imprima seus valores.
+
