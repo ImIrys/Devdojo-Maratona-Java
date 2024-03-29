@@ -408,3 +408,41 @@ Exemplo: public class Estudante {
              public String nome; // Posso definir,inicializar diretamente, mas em todos os objetos, em 'nome' receberão o mesmo valor.
              public int idade;
              public char sexo;
+
+=============================================================================
+
+41 - Orientação Objetos - Coesão
+
+- Coesão: Relacionado ao propósito das classes.
+- Não misturar o propósito de suas existências.
+- 1 propósito por classe.
+
+Exemplo 1:
+public class Estudante {
+    public String nome = "Flicka";
+    public int idade;
+    public char sexo;
+
+ public String nomeProfessor;
+    public int idadeProfessor;
+    public char sexoProfessor;
+
+OBS: Técnicamente, esse código não está errado, mas no proprósito de manutenção, está errado.
+Pois, está se tratando de 2 coisas numa classe específica.
+Criar uma própria classe para Professor.
+
+Exemplo 2: Colocar o public static void main
+public class Estudante {
+    public String nome = "Flicka";
+    public int idade;
+    public char sexo;
+
+public static void main (String[] args) {
+    }
+}
+
+OBS: O código está fazendo 2 coisas:
+1º) A classe Estudante, está representando o domínio estudante no mundo real
+2º) Está representando a execução desse estudante
+
+Ao criar uma classe específica para teste, deixamos o código coeso.
