@@ -523,6 +523,17 @@ Variáveis de referência podem referenciar outros objetos, é associado a um ob
 
 --Parâmetros--
 -SINTAXE: tipo de variável + identificador
-(os tipos primitivos ou de as de referência, até mesmo arrays)
+(os tipos primitivos ou as de referência, até mesmo arrays)
 -São variáveis locais.
 -Exemplo: public void multiplicaDoisNumeros(int num1, int num2)
+
+=============================================================================
+
+46 - Orientação Objetos - Métodos pt 03 - Retorno pt 01
+
+Método com retorno
+
+public + tipo da variável primitiva ou reference + nome da variável {
+return x;
+}
+
