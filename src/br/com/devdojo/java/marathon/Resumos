@@ -496,3 +496,27 @@ Variáveis de referência podem referenciar outros objetos, é associado a um ob
 // OBS: No momento em que se executa a linha de código abaixo, a referência do espaço de memória anterior se perde.
         carro1 = carro2;
 
+=============================================================================
+
+44 - Orientação Objetos - Métodos pt 01
+
+--Atributos--
+-SINTAXE: modificador de acesso + tipo da variável + identificador
+-Exemplo1: public int idade;
+-Exemplo2: professor.nome = "Kakashi";
+-OBS: Usa-se o sinal de igual para dar o valor.
+
+--Métodos--
+-SINTAXE: modificador de acesso + retorno + nome do método + () + {}
+-Parecido com os atributos mas com a funcionalidade diferente;
+-Refere-se ao comportamento das classes;
+-Eles retornam algo ou não retorna nada. (Diferente de saída)
+-Exemplo1: public void somaDoisNumeros(){}
+-Exemplo2: calculadora.somaDoisNumeros();
+-OBS: Usa-se o ponto final + o nome do método seguido de parentêses
+
+**Assim como os Atributos, os métodos são executados nos objetos.
+
+=============================================================================
+
+45 -
