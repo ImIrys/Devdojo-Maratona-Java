@@ -532,8 +532,63 @@ Variáveis de referência podem referenciar outros objetos, é associado a um ob
 46 - Orientação Objetos - Métodos pt 03 - Retorno pt 01
 
 Método com retorno
+REGRA: Também pode ser usado para métodos void.
 
 public + tipo da variável primitiva ou reference + nome da variável {
 return x;
 }
+
+=============================================================================
+
+47 - Orientação Objetos - Métodos pt 04 - Retorno pt 02
+
+1)Outra forma de usar o Return:
+public double divideDoisNumeros02(double num1, double num2){
+        if (num1 == 0 || num2 == 0) {
+            return 0;
+        } else
+        return num1/num2;
+    }
+
+2)Outra forma:
+public double divideDoisNumeros02(double num1, double num2){
+         if (num2 != 0) {
+         return num1/num2;
+         }
+         return 0;
+
+3) Usando o return no método void:
+public void imprimeDivisaoDoisNumeros(double num1, double num2) {
+        if (num2 == 0) {
+            System.out.println("Não existe divisão por zero.");
+        }
+        System.out.println(num1/num2);
+
+OBS: Usar uma chamada de método dentro de um system.out.println em que o retorno é void (não existe), terá um erro de compilação.
+O system.out.println precisa de um valor para imprimir no console.
+Então, para executar o método, é preciso retirar o system.out.println
+
+System.out.println(calculadora.imprimeDivisaoDoisNumeros(20,10));
+
+calculadora.imprimeDivisaoDoisNumeros(20,10);
+
+3.1)Usando o return:
+public void imprimeDivisaoDoisNumeros(double num1, double num2) {
+        if (num2 == 0) {
+            System.out.println("Não existe divisão por zero.");
+            return;
+        }
+            System.out.println(num1 / num2);
+
+---------------
+- Usando o if else
+public void imprimeDivisaoDoisNumeros(double num1, double num2) {
+        if (num2 == 0) {
+            System.out.println("Não existe divisão por zero.");
+        } else {
+            System.out.println(num1 / num2);
+
+----------------
+
+
 
