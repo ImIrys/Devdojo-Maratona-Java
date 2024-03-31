@@ -588,7 +588,22 @@ public void imprimeDivisaoDoisNumeros(double num1, double num2) {
         } else {
             System.out.println(num1 / num2);
 
-----------------
+=============================================================================
 
+48 - Orientação Objetos - Métodos pt 05 - Parâmetros tipo primitivo
 
+-Passagem de parâmetros do tipo primitivo:
+Quando se passa valores do tipo primitivo para um método não estamos passando a referência daquele objeto em memória, estamos fazendo uma cópia.
+*Então, passando variáveis do tipo primitivo, sempre envia-se uma cópia.
+-A variável original nunca será alterada dentro do método.
 
+=============================================================================
+
+49 - Orientação Objetos - Métodos pt 06 - Parâmetros tipo referência
+
+-Passagem de parâmetros do tipo referência:
+Quando passamos objetos como argumento, na verdade estamos passando a referência aonde aquele objeto está guardado.
+A referência original continua.
+
+-Com 2 objetos, como melhorar o código sem a necessidade de repetição em que apenas a variável de referutilizando a coesão:
+Criar uma variável através de uma classe específica.
