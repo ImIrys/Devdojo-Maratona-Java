@@ -602,8 +602,19 @@ Quando se passa valores do tipo primitivo para um método não estamos passando 
 49 - Orientação Objetos - Métodos pt 06 - Parâmetros tipo referência
 
 -Passagem de parâmetros do tipo referência:
+Quando passamos parâmetros via referência estamos passando a própria referência dele.
 Quando passamos objetos como argumento, na verdade estamos passando a referência aonde aquele objeto está guardado.
 A referência original continua.
 
 -Com 2 objetos, como melhorar o código sem a necessidade de repetição em que apenas a variável de referutilizando a coesão:
 Criar uma variável através de uma classe específica.
+
+=============================================================================
+
+50 - Orientação Objetos - Métodos pt 07 - Parâmetros tipo referência pt 02
+
+-Quando se altera algo dentro do objeto, essa alteração é mantida para as outras referências que ainda possuem ligação com esse objeto.
+-Qualquer alteração feito dentro da classe vai afetar o objeto que esteja contido nela.
+-OBS: A passagem de parâmetro via referência é perigosa, pois quando usamos tipos primitivos usa-se uma cópia (nunca altera-se o original),
+mas passagem de parametros via referência, tudo o que for feito no objeto, afetará o objeto, independente do que fizermos dentro de outra classe ou dentro da classse originária (onde criou-se o objeto)
+-As boas regras da programação diz que ao invés de alterar os dados que estão sendo passado para o objeto, é preciso retornar um novo objeto.
