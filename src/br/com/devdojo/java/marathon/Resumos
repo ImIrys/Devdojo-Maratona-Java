@@ -638,3 +638,17 @@ THIS:
 
 A variável de referência é como um controle remoto, e os atributos são os botões desse controle.
 O objeto é quem executa.
+
+=============================================================================
+
+52 - Orientação Objetos - Métodos pt 09 - Varargs
+
+Varargs:
+- Sintaxe que foi criada para deixar as coisas mais simples.
+- Outra forma de representar os Arrays.
+- A vantagem dele em comparação aos Arrays é a forma mais simples de passar vários elementos do mesmo tipo para um método.
+Sintaxe: tipo + ... + nomedavariavel
+public void somaVarArgs(int ... numeros)
+
+-VarArgs precisa vir depois caso haja outro atributo.
+public void somaVarArgs(double valor, double v2, int ... numeros)
