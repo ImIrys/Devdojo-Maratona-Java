@@ -618,3 +618,23 @@ Criar uma variável através de uma classe específica.
 -OBS: A passagem de parâmetro via referência é perigosa, pois quando usamos tipos primitivos usa-se uma cópia (nunca altera-se o original),
 mas passagem de parametros via referência, tudo o que for feito no objeto, afetará o objeto, independente do que fizermos dentro de outra classe ou dentro da classse originária (onde criou-se o objeto)
 -As boas regras da programação diz que ao invés de alterar os dados que estão sendo passado para o objeto, é preciso retornar um novo objeto.
+
+=============================================================================
+
+51 - Orientação Objetos - Métodos pt 08 - Referência this
+
+-Toda vez que executamos alguma coisa temos que chamar a variável de referência.
+-Quem executa os dado em si é o objeto.
+-Atribuir um valor: variavel de referencia.atributo = alguma coisa
+-Estamos sempre executando dentro do método.
+
+Método imprime
+-Quando fica dentro do objeto, ao ser chamado, consehue acessar todos os valores que tem disponivel,
+isso ajuda a não precisar criar uma variável de referência. Na prórpia variável de referência só chamaremos o atributo imprime.
+
+THIS:
+-Palavra reservada usada para se referir a algo que está dentro do próprio objeto.
+-
+
+A variável de referência é como um controle remoto, e os atributos são os botões desse controle.
+O objeto é quem executa.
