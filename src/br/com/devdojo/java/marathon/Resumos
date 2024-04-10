@@ -652,3 +652,34 @@ public void somaVarArgs(int ... numeros)
 
 -VarArgs precisa vir depois caso haja outro atributo.
 public void somaVarArgs(double valor, double v2, int ... numeros)
+
+=============================================================================
+
+53 - Orientação Objetos - Métodos pt 10 - Exercise
+-Exercício relacionado a Métodos, Classes, Objetos e tudo o que foi visto até agora:
+
+CRIE UMA CLASSE FUNCIONÁRIO COM OS SEGUINTES ATRIBUTOS:
+
+nome
+idade
+salario // 3 salários devem ser guardados
+
+CRIE 2 MÉTODOS
+
+1. PARA IMPRIMIR OS DADOS
+2. PARA TIRAR A MÉDIA DOS SALÁRIOS E IMPRIMIR O RESULTADO
+
+
+OBS: Dividir o problema e resolver cada parte.
+
+=============================================================================
+
+
+
+
+
+
+
+
+
+
