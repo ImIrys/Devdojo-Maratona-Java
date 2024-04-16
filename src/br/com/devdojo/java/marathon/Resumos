@@ -704,11 +704,21 @@ Baixo Acoplamento é BOM
 set é para setar (precisa de um argumento do mesmo tipo da variável, não vai retornar nada)
 get é para pegar (
 
+=============================================================================
 
+55 - Orientação Objetos - Modificador de acesso private, get e set pt 02
 
+A variável de referência acessa tudo que é público. (set, get)
+Exemplo:
 
+private String nome;
+private int idade;
 
+setNome(String nome) // esse nome vai para o espaço de memória do private String nome
+getNome() // retorna o que tem em memória no private String nome
 
+------
 
+Dentro do objeto, temos acesso a tudo dentro dele, incluindo os métodos.
 
 
