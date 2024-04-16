@@ -674,6 +674,35 @@ OBS: Dividir o problema e resolver cada parte.
 
 =============================================================================
 
+54 - Orientação Objetos - Modificador de acesso private, get e set pt 01
+
+//
+OBS: Para iniciar um objeto: Temos que criar uma variável de referência,
+em seguida instanciar um objeto, e precisamos inicializar os atributos.
+//
+
+-Acoplamento: o quanto uma classe conhece da outra.
+O quão uma classe está conectada com a outra.
+-Para isso, temos os modificadores de acesso (public, private)
+-Uma forma de garantir baixo acoplamento é utilizar modificadores de acesso privado.
+
+--PRIVATE--
+- Os atributos só poderão ser acessados pelos objetos.
+- Pode-se criar o objeto, mas ao executar o método imprime, vai imprimir os valores padrões na criação de variáveis de classe.
+- Como atribuir valores:
+Quando se criar atributos privados, pode-se criar um método para acessá-los
+REGRA DO JAVA:
+SEMPRE QUE FOR CRIAR UM MÉTODO PARA INSERIR UM VALOR DENTRO DE UM ATRIBUTO INICIA-SE DIGITANDO A PALAVRA set.
+
+-Como proteger ao usar o set:
+
+OBS:
+Alta Coesão é BOM
+Baixo Acoplamento é BOM
+
+--SET x GET--
+set é para setar (precisa de um argumento do mesmo tipo da variável, não vai retornar nada)
+get é para pegar (
 
 
 
