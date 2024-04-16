@@ -721,4 +721,7 @@ getNome() // retorna o que tem em memória no private String nome
 
 Dentro do objeto, temos acesso a tudo dentro dele, incluindo os métodos.
 
+=============================================================================
+
+56 - Orientação Objetos - Modificador de acesso private, get e set pt 03
 
