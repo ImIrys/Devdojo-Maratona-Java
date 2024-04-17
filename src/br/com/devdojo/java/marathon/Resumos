@@ -732,3 +732,22 @@ alt+insert = gera os getters e setters
 
 Forma de bloquear o acesso a escrita e deixar somente a leitura
 Remover o set (o que dá o valor ao atributo) e deixar somente o get (retorna o que temos em memória)
+
+=============================================================================
+
+57 - Orientação Objetos - Sobrecarga de métodos
+
+Deixar a estrutura do set e get no final do código, pois em termos de importância,
+são menores do que o método para impressão e os atributos.
+
+- Sobrecarga de métodos: Ter um método com o mesmo nome,
+porém o tipo ou a quantidade dos parâmetros são diferentes.
+OBS: o modificador de acesso e o retorno não importam aqui. (public void)
+
+- Criar métodos que peçam vários argumentos:
+public void nomedometodo
+
+Para evitar quebra de código, cria-se outro método com o mesmo nome.
+
+PROBLEMA: Repetição de código.
+SOLUÇÃO: chamar o primeiro método dentro do segundo método
