@@ -9,7 +9,7 @@ public class FuncionarioTest01 {
         funcionario.setIdadeFuncionario(32);
         funcionario.setSalarioFuncionario(new double[]{1200, 987.32, 2000});;
          // arrays são variáveis de referência, criamos um objeto array.
-
         funcionario.imprimeDados();
+        System.out.println("Média: " + funcionario.getMedia());
     }
 }

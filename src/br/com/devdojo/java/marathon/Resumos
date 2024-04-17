@@ -725,3 +725,10 @@ Dentro do objeto, temos acesso a tudo dentro dele, incluindo os métodos.
 
 56 - Orientação Objetos - Modificador de acesso private, get e set pt 03
 
+Importância de tomar cuidado ao criar um método get, set para um atributo:
+
+*HACKS:
+alt+insert = gera os getters e setters
+
+Forma de bloquear o acesso a escrita e deixar somente a leitura
+Remover o set (o que dá o valor ao atributo) e deixar somente o get (retorna o que temos em memória)
