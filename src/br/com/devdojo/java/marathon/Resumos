@@ -751,3 +751,49 @@ Para evitar quebra de código, cria-se outro método com o mesmo nome.
 
 PROBLEMA: Repetição de código.
 SOLUÇÃO: chamar o primeiro método dentro do segundo método
+
+REGRA DA SOBRECARGA:
+-Ter o método com o mesmo nome só que a quantidade de parâmetro ou
+o tipo dos parâmetros precisa se diferente.
+
+=============================================================================
+
+58 - Orientação Objetos - Construtores pt 01
+
+- Construtores: Todas as vezes que criamos um objetos estamos construindo um objeto.
+- Se não escrevermos um construtor na classe, o JAVA vai adicionar um no meio
+da compilação (transformar o .java em .class)
+- Precisa-se de um construtor para se dar origem ao um objeto.
+
+
+1ª REGRA:
+Construtor não tem nenhum tipo de retorno.
+SINTAXE: modificador de acesso + nome da classe + () {}
+EXEMPLO: public Anime(){}
+
+--------------------------
+OBS1: Construtor x Método:
+Método: tem retorno (void)
+public void Anime(){}
+Construtor: não tem retorno
+public Anime(){}
+--------------------------
+
+VANTAGEM DOS CONSTRUTORES:
+- Força a seguir algumas regras.
+- É executado antes de qualquer método contido na classe.
+- Podemos usar o construtor para a inicialização de objetos na criação do mesmo.
+- SOBRECARGA DE CONSTRUTORES: Criar objeto com todos os atributos e sem atributos
+Criar outro construtor com o mesmo nome, obrigatoriamente, mas cria-se sem os parâmetros.
+
+--------------------------
+OBS2:
+- É um inicializador dos objetos, responsável pela criação no momento
+em que se pede determinados parâmetros é obrigatório passá-los,
+a não ser que se tenha um construtor sobrecarregado.
+--------------------------
+
+=============================================================================
+
+59 - Orientação Objetos - Construtores pt 02 - Sobrecarga
+
