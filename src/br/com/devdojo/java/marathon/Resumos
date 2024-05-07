@@ -797,3 +797,23 @@ a não ser que se tenha um construtor sobrecarregado.
 
 59 - Orientação Objetos - Construtores pt 02 - Sobrecarga
 
+-Construtor é relacionado ao objeto.
+
+-Como funciona a sobrecarga de construtores-
+
+-Sintaxe: this.();
+- Essa sintaxe só pode ser usada dentro de um construtor.
+- this deve ser a primeira linha executável do corpo do construtor.
+
+this(argumentos);
+
+=============================================================================
+
+60 - Orientação Objetos - Blocos de inicialização
+
+-A inicialização dos objetos acontecem antes da construção da execução do construtor.
+-Geralmente antes dos construtores e depois dos atributos, abre e fecha chaves.
+-São instãncias, pois é executado todas as vezes que o objeto é criado, antes do construtor.
+
+DIFERENÇA ENTRE BLOCO DE INICIALIZAÇÃO E O CONSTRUTOR:
+-Bloco de inicialização é executado independente do construtor que for chamado;
