@@ -817,3 +817,26 @@ this(argumentos);
 
 DIFERENÇA ENTRE BLOCO DE INICIALIZAÇÃO E O CONSTRUTOR:
 -Bloco de inicialização é executado independente do construtor que for chamado;
+
+=============================================================================
+
+61 - Orientação Objetos - Modificador static
+
+-Faz o atributo pertencer à classe e todos os objetos vão compartilhar o mesmo valor.
+
+Propriedade que seja independente do objeto,
+que afete a instância Carro em si e os objetos que serão criados.
+Criar um modificador estático.
+
+SINTAXE: Modificador de acesso + modificador estático
+Exemplo: private static double velocidadeLimite;
+
+Identificador que está relacionado a classe em si.
+
+this se refere a instância do objeto.
+Dentro do objeto teremos acesso aos atributos estáticos,
+Exemplo: this.velocidadeLimite
+mas não é aconselhável para evitar confusão. Acessar através da própria classe.
+Exemplo: CArro.velocidadeLimite
+
+
