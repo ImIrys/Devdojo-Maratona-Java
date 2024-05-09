@@ -822,7 +822,9 @@ DIFERENÇA ENTRE BLOCO DE INICIALIZAÇÃO E O CONSTRUTOR:
 
 61 - Orientação Objetos - Modificador static
 
--Faz o atributo pertencer à classe e todos os objetos vão compartilhar o mesmo valor.
+-Faz o atributo pertencer à classe e
+todos os objetos derivados dessa classe (instâncias)
+vão compartilhar o mesmo valor.
 
 Propriedade que seja independente do objeto,
 que afete a instância Carro em si e os objetos que serão criados.
@@ -839,4 +841,30 @@ Exemplo: this.velocidadeLimite
 mas não é aconselhável para evitar confusão. Acessar através da própria classe.
 Exemplo: CArro.velocidadeLimite
 
+=============================================================================
 
+62 - Orientação Objetos - Métodos estáticos
+
+Como criar um método estático:
+Da mesma forma que se cria um atributo, pode-se começar com static public ou
+public static.
+EXEMPLO: static public void setVelocidadeLimite(double velocidadeLimite){}
+
+OBS: Não é recomendado iniciar com STATIC. É convencionado que primeiro se tem o modificador
+de acesso e depois o STATIC.
+EXEMPLO: public static void setVelocidadeLimite(double velocidadeLimite){}
+
+-Métodos GET e SET
+
+- Além do this, não pode-se acessar nenhuma variável estática
+dentro de métodos estáticos.
+- Pq métodos estáticos não podem acessar atributos de instâncias:
+Quando usa-se o STATIC existe a possibilidade de não existir um objeto em memória,
+então não é possível pegar uma variável que só pode existir em memória.
+-O contrário é possível, um objeto sempre é criado depois dos valores estáticos serem inicializados.
+Sempre vai existir os estáticos depois de criar um atributo.
+
+-RECOMENDAÇÃO DE UTILIZAÇÃO DE MÉTODOS ESTÁTICS E NÃO ESTÁTICOS:
+Quando os métodos não acessam a variável (atributo da instância).
+
+=============================================================================
