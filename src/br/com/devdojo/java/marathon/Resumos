@@ -868,3 +868,37 @@ Sempre vai existir os estáticos depois de criar um atributo.
 Quando os métodos não acessam a variável (atributo da instância).
 
 =============================================================================
+
+63 - Orientação Objetos - Bloco de inicialização estático
+
+Toda vez que criamos um objeto, estamos executando um bloco de inicialização.
+Esse bloco de inicialização sempre será executado todas as vezes que um novo objeto for criado.
+
+- Quando trabalhamos com atributos estáticos não usamos o this usamos o nome da própria classe.
+
+- Quando se trabalha com blocos de inicialização estáticos, só precisamos adicionar
+a palavra STATIC antes do bloco e inicialização.
+
+- É executado apenas uma vez quando a classe é carregada pela JVM e isso acontece antes
+de qualquer coisa, até mesmo antes de alocar espaço em memória pelo objeto.
+Se houver uma ordem, eles aparecem na ordem de aparição.
+Não podemos acessar atributos de instâncias dentro de métodos estáticos
+justamente por ainda nem existir um objeto em memória quando o bloco é executado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
