@@ -889,11 +889,39 @@ justamente por ainda nem existir um objeto em memória quando o bloco é executa
 
 64 - Orientação Objetos - Associação pt 01 - Arrays com Objetos
 
+A associação em programação orientada a objetos é um conceito que descreve como classes
+e objetos estão conectados e interagem entre si.
+Em Java, uma forma comum de associação é através de arrays com objetos.
 
+Resumindo:
 
+Associação em Java:
+Em Java, a associação é a relação entre duas classes,
+onde uma classe usa ou é usada por outra.
+Ela pode ser realizada de diversas formas, incluindo composição,
+agregação e herança.
 
+Arrays com Objetos:
+Arrays em Java são estruturas que armazenam múltiplos valores do mesmo
+tipo em uma única variável.
+Arrays podem conter objetos como elementos, permitindo armazenar
+várias instâncias de uma classe em uma estrutura de dados.
+Isso é útil quando você precisa lidar com coleções de
+objetos do mesmo tipo, como uma lista de alunos em uma turma,
+uma coleção de produtos em um estoque, etc.
+Para criar um array de objetos em Java, você declara o array do
+tipo da classe do objeto e instancia cada objeto individualmente.
 
+=============================================================================
 
+65 - Orientação Objetos - Associação pt 02 - Associação unidirecional um para muitos
+
+Jogador 1 --  1 Personagem
+Time 1 -- N  Jogador
+Jogador N -- 1  Time
+Estudante N -- N  Curso
+
+Associação: Criar relacionamento entre classes e objetos no JAVA
 
 
 
