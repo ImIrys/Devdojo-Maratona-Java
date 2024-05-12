@@ -1,6 +1,6 @@
 package br.com.devdojo.java.marathon.javacore.Bintroducaometodos.test;
 
-import br.com.devdojo.java.marathon.javacore.Bintroducaometodos.dominio.Pessoa;
+import br.com.devdojo.java.marathon.javacore.Bintroducaometodos.domain.Pessoa;
 
 public class PessoaTest01 {
     public static void main(String[] args) {

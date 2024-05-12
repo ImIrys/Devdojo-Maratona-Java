@@ -1,4 +1,4 @@
-package br.com.devdojo.java.marathon.javacore.Dconstrutores.dominio;
+package br.com.devdojo.java.marathon.javacore.Csobrecargametodos.domain;
 
 public class Anime {
 
@@ -6,20 +6,17 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
-    private String estudio;
-    public Anime(String nome, String tipo, int episodios, String genero){
-        this();
+
+    public void init(String nome, String tipo, int episodios){
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
+    }
+
+    public void init(String nome, String tipo, int episodios, String genero) {
+        this.init(nome, tipo, episodios);
         this.genero = genero;
     }
-
-    public Anime(){
-        System.out.println("Dentro do construtor sem argumentos");
-
-    }
-
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.tipo);

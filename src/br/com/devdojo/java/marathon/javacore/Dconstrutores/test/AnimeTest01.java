@@ -1,7 +1,7 @@
 package br.com.devdojo.java.marathon.javacore.Dconstrutores.test;
 
 
-import br.com.devdojo.java.marathon.javacore.Dconstrutores.dominio.Anime;
+import br.com.devdojo.java.marathon.javacore.Dconstrutores.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

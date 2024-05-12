@@ -1,6 +1,6 @@
 package br.com.devdojo.java.marathon.javacore.Aintroducaoclasses.test;
 
-import br.com.devdojo.java.marathon.javacore.Aintroducaoclasses.dominio.Professor;
+import br.com.devdojo.java.marathon.javacore.Aintroducaoclasses.domain.Professor;
 
 public class ProfessorTest01 {
     public static void main(String[] args) {

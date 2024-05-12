@@ -885,6 +885,9 @@ Se houver uma ordem, eles aparecem na ordem de aparição.
 Não podemos acessar atributos de instâncias dentro de métodos estáticos
 justamente por ainda nem existir um objeto em memória quando o bloco é executado.
 
+=============================================================================
+
+64 - Orientação Objetos - Associação pt 01 - Arrays com Objetos
 
 
 

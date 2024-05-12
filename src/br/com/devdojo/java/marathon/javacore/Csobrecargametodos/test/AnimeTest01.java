@@ -1,6 +1,6 @@
 package br.com.devdojo.java.marathon.javacore.Csobrecargametodos.test;
 
-import br.com.devdojo.java.marathon.javacore.Csobrecargametodos.dominio.Anime;
+import br.com.devdojo.java.marathon.javacore.Csobrecargametodos.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {
