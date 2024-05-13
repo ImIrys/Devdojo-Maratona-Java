@@ -923,11 +923,47 @@ Estudante N -- N  Curso
 
 Associação: Criar relacionamento entre classes e objetos no JAVA
 
+=============================================================================
 
+66 - Orientação Objetos - Associação pt 03 - Associação unidirecional muitos para um
 
+- A associação unidirecional muitos para um é útil para modelar relacionamentos onde uma entidade
+pode ter várias instâncias de outra entidade, mas cada instância
+da segunda entidade só pode estar relacionada a uma instância da primeira.
 
+-Conceito:
+Uma associação unidirecional muitos para um define um relacionamento onde uma instância de uma classe (muitos) pode estar relacionada a no máximo uma instância de outra classe (um).
+Na analogia, uma escola pode ter vários professores, mas um professor só pode pertencer a uma escola.
 
+**Exemplo:
+Classe Escola:
+Atributos: nome
+Método: imprimir() - exibe o nome da escola e seus professores
+Classe Professor:
+Atributos: nome, escola (associação com a classe Escola)
+Método: imprimir() - exibe o nome do professor e sua escola
 
+-Implementação:
+A associação é unidirecional da escola para o professor.
+A escola possui uma lista de professores.
+O professor possui uma referência para a escola a qual pertence.
+Métodos imprimir() em ambas as classes exibem as informações relevantes da associação.
+
+-Criação de Objetos:
+Uma escola pode ser criada sem professores.
+Um professor precisa ser criado com uma escola associada.
+A escola pode adicionar professores à sua lista após sua criação.
+
+-Modificação da Associação:
+A escola pode trocar de professor.
+Um professor pode ser desassociado da escola.
+
+-Observações:
+A ordem de criação dos objetos não importa, mas é mais intuitivo criar a escola primeiro.
+É possível sobrecarregar o construtor da escola para criar uma instância com professores pré-definidos.
+O acionamento de métodos em objetos associados funciona da mesma forma que em associações unidirecionais um para um.
+
+=============================================================================
 
 
 
