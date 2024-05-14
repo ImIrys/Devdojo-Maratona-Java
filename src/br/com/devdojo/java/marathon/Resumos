@@ -965,7 +965,48 @@ O acionamento de métodos em objetos associados funciona da mesma forma que em a
 
 =============================================================================
 
+67 - Orientação Objetos - Associação pt 04 - Associação bidirecional
 
+O que é Associação Bidirecional?
 
+Na OO, a associação permite que objetos se relacionem entre si.
+A associação bidirecional, em particular, significa que dois objetos
+possuem referências um ao outro.
+Isso permite que ambos os objetos acessem e modifiquem os atributos do outro.
+
+Exemplo: Time e Jogador
+Um time pode ter vários jogadores, e cada jogador pertence
+a um único time. Essa relação pode ser representada por meio de
+associação bidirecional.
+
+Criando Classes e Atributos
+A classe Time possui um atributo jogadores do tipo List<Jogador>,
+que armazena os jogadores do time.
+Já a classe Jogador possui um atributo time do tipo Time,
+que referencia o time ao qual o jogador pertence.
+
+Métodos para Adicionar e Remover Jogadores
+São implementados métodos nas classes Time e Jogador para
+adicionar e remover jogadores.
+O método addJogador na classe Time adiciona um jogador à lista
+de jogadores do time. Já o método removerJogador
+remove um jogador da lista. Na classe Jogador, o método setTime define
+o time ao qual o jogador pertence.
+
+Imprimindo Informações
+Criação de um método imprimir em ambas as classes para exibir as
+informações dos objetos. O método imprimir na classe Time exibe o
+nome do time e seus jogadores, enquanto o método imprimir na
+classe Jogador exibe o nome do jogador e o time ao qual ele pertence.
+
+Pontos Importantes:
+A associação bidirecional permite que objetos se relacionem e
+modifiquem os atributos uns dos outros.
+É importante garantir a consistência dos dados ao utilizar
+associação bidirecional.
+É crucial entender como os objetos se comunicam
+na memória para trabalhar com associação bidirecional.
+
+=============================================================================
 
 
