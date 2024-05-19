@@ -1106,6 +1106,27 @@ de entrada, como arquivos ou interfaces gráficas.
 
 69 - Orientação Objetos - Exercício leitura de dados do teclado
 
+=============================================================================
+
+70 - Orientação Objetos - Associação pt 05 - Exercício Associação
+
+-Crie um sistema que gerencie seminários.
+-O sistema deverá cadastrar seminários, estudantes, professores
+e local onde será realizado.
+
+1 aluno poderá estar em apenas 1 seminário;
+1 seminário poderá ter nenhum ou vários alunos;
+1 professor poderá ministrar vários seminários;
+1 seminário deve ter um local.
+
+-Campos básicos (excluindo relacionamento):
+seminário: título
+aluno: nome e idade;
+professor: nome, especialidade
+local: endereço
+
+=============================================================================
+
 
 
 
