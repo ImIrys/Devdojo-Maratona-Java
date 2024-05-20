@@ -1127,6 +1127,57 @@ local: endereço
 
 =============================================================================
 
+71 - Orientação Objetos - Herança pt 01
+
+-O que é Herança?
+Herança é um mecanismo de programação que permite que uma
+classe (chamada classe derivada) herde atributos e métodos de outra
+classe (chamada classe base).
+Isso significa que a classe derivada pode usar os mesmos
+atributos e métodos da classe base, além de ter seus próprios
+atributos e métodos específicos.
+
+-Benefícios da Herança:
+*Reutilização de código: A herança permite que você reutilize
+código existente, evitando duplicação e tornando o código mais organizado.
+*Hierarquia de classes: A herança permite criar uma hierarquia
+de classes que reflete as relações entre os objetos no mundo real.
+*Especialização: A herança permite que você crie classes mais
+específicas que herdam funcionalidades de classes mais genéricas.
+
+**Exemplo de Herança:
+Classes Pessoa e Funcionário para demonstrar o conceito de herança.
+A classe Pessoa possui atributos como nome, CPF e endereço,
+enquanto a classe Funcionário herda esses atributos da classe Pessoa e
+possui um atributo adicional chamado salário.
+
+-Implementação da Herança em Java:
+Na linguagem Java, a herança é implementada utilizando a
+palavra-chave extends.
+Por exemplo, a classe Funcionário herda da classe Pessoa da
+seguinte forma:
+
+Java
+class Funcionario extends Pessoa {
+  // Atributos específicos da classe Funcionário
+  private double salario;
+
+  // Métodos específicos da classe Funcionário
+  public void imprimirSalario() {
+    System.out.println("Salário: " + this.salario);
+  }
+}
+
+
+-Considerações sobre o Uso da Herança:
+A herança deve ser utilizada com cuidado,
+pois pode levar a um acoplamento forte entre as classes,
+dificultando a manutenção do código.
+Em geral, a herança é recomendada quando existe uma relação
+de "é um" entre as classes, ou seja, quando uma classe é um
+tipo específico de outra classe.
+
+=============================================================================
 
 
 
