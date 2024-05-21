@@ -1239,6 +1239,44 @@ Conclusão:
 
 =============================================================================
 
+73 - Orientação Objetos - Herança pt 03 - protected
+
+Relembrando a Herança:
+A herança permite que uma classe (filha) herde atributos e
+métodos de outra classe (pai).
+Isso significa que a classe filha pode utilizar os
+atributos e métodos da classe pai, além de ter seus próprios
+atributos e métodos específicos.
+
+Modificador de Acesso protected:
+Subclasse acessa atributo como
+se fosse público em qualquer lugar.
+Se não for subclasse, somente se tiver dentro do mesmo pacote.
+O modificador de acesso protected define que um membro
+da classe (atributo ou método) é acessível apenas
+dentro da própria classe, nas classes filhas e nas
+classes do mesmo pacote.
+Isso significa que o membro
+protected não é acessível em classes de outros pacotes.
+
+-Vantagens do protected:
+*Encapsulamento: O protected ajuda a encapsular os membros da classe, escondendo-os de classes externas, mas permitindo que eles sejam acessados ​​por classes filhas e classes do mesmo pacote.
+*Reutilização de código: O protected facilita a reutilização de código, pois permite que as classes filhas utilizem os membros protected da classe pai sem precisar reimplementá-los.
+*Organização do código: O protected promove a organização do código, definindo diferentes níveis de visibilidade para os membros da classe.
+
+-Exemplo de Uso do protected:
+Classes Pessoa, Funcionario e Gerente para demonstrar o
+uso do modificador de acesso protected.
+A classe Pessoa possui atributos nome e endereco
+como protected. A classe Funcionario herda esses
+atributos e pode acessá-los diretamente.
+A classe Gerente, que é uma classe filha de Funcionario,
+também pode acessar os atributos protected da classe Pessoa.
+
+Conclusão:
+O protected pode ser utilizado para encapsular código,
+promover reutilização e organizar o código de forma
+eficiente.
 
 
 =============================================================================
