@@ -1179,5 +1179,79 @@ tipo específico de outra classe.
 
 =============================================================================
 
+72 - Orientação Objetos - Herança pt 02 - Super
 
+-O que é herança?
+Herança é um mecanismo em Orientação a Objetos que permite que uma
+classe (filha) herde atributos e métodos de outra classe (pai).
+Isso significa que a classe filha pode reutilizar o código da classe pai,
+evitando duplicação e promovendo organização.
+
+Exemplos:
+Classe Pessoa: Possui atributos como nome, CPF e endereço.
+Classe Funcionário: É uma classe filha da classe Pessoa,
+herdando seus atributos e métodos. Além disso, possui atributos
+específicos como salário e desconto.
+
+-Método super:
+O método super permite que a classe filha acesse e utilize métodos da
+classe pai.
+
+-Sobreescrita de métodos:
+A sobreescrita de métodos permite que a classe filha redefina
+o comportamento de um método herdado da classe pai.
+
+-Exemplo de sobreescrita:
+Python
+class Pessoa:
+  def __init__(self, nome, cpf, endereco):
+    self.nome = nome
+    self.cpf = cpf
+    self.endereco = endereco
+
+  def imprimir(self):
+    print(f"Nome: {self.nome}")
+    print(f"CPF: {self.cpf}")
+    print(f"Endereço: {self.endereco}")
+
+class Funcionario(Pessoa):
+  def __init__(self, nome, cpf, endereco, salario, desconto):
+    super().__init__(nome, cpf, endereco)
+    self.salario = salario
+    self.desconto = desconto
+
+  def imprimir(self):
+    super().imprimir()
+    print(f"Salário: {self.salario}")
+    print(f"Desconto: {self.desconto}")
+
+funcionario = Funcionario("Cássia Eller", "12345678900", "Rua X, 123", 3000, 100)
+funcionario.imprimir()
+
+Resultado:
+
+Nome: Cássia Eller
+CPF: 12345678900
+Endereço: Rua X, 123
+Salário: 3000
+Desconto: 100
+Conclusão:
+
+=============================================================================
+
+
+
+=============================================================================
+
+
+
+=============================================================================
+
+
+
+=============================================================================
+
+
+
+=============================================================================
 
