@@ -1241,14 +1241,14 @@ Conclusão:
 
 73 - Orientação Objetos - Herança pt 03 - protected
 
-Relembrando a Herança:
+-Relembrando a Herança:
 A herança permite que uma classe (filha) herde atributos e
 métodos de outra classe (pai).
 Isso significa que a classe filha pode utilizar os
 atributos e métodos da classe pai, além de ter seus próprios
 atributos e métodos específicos.
 
-Modificador de Acesso protected:
+-Modificador de Acesso protected:
 Subclasse acessa atributo como
 se fosse público em qualquer lugar.
 Se não for subclasse, somente se tiver dentro do mesmo pacote.
@@ -1260,9 +1260,17 @@ Isso significa que o membro
 protected não é acessível em classes de outros pacotes.
 
 -Vantagens do protected:
-*Encapsulamento: O protected ajuda a encapsular os membros da classe, escondendo-os de classes externas, mas permitindo que eles sejam acessados ​​por classes filhas e classes do mesmo pacote.
-*Reutilização de código: O protected facilita a reutilização de código, pois permite que as classes filhas utilizem os membros protected da classe pai sem precisar reimplementá-los.
-*Organização do código: O protected promove a organização do código, definindo diferentes níveis de visibilidade para os membros da classe.
+*Encapsulamento: O protected ajuda a encapsular os membros
+da classe, escondendo-os de classes externas, mas permitindo
+que eles sejam acessados por classes filhas e classes
+do mesmo pacote.
+*Reutilização de código: O protected facilita a
+reutilização de código, pois permite que as classes
+filhas utilizem os membros protected da classe pai
+sem precisar reimplementá-los.
+*Organização do código: O protected promove a organização
+do código, definindo diferentes níveis de visibilidade
+para os membros da classe.
 
 -Exemplo de Uso do protected:
 Classes Pessoa, Funcionario e Gerente para demonstrar o
@@ -1281,10 +1289,107 @@ eficiente.
 
 =============================================================================
 
+74 - Orientação Objetos - Herança pt 04 - Construtores
 
+-Conceitos chave:
+Herança: Uma classe pode herdar atributos e métodos de
+outra classe, chamada de superclasse.
+Classe: Um modelo para criar objetos que possuem
+características e comportamentos em comum.
+Objeto: Uma instância de uma classe, com seus próprios
+valores para os atributos.
+Construtor: Um método especial que inicializa os atributos
+de um objeto quando ele é criado.
+Superclasse: A classe da qual outra classe herda.
+Subclasse: A classe que herda de outra classe.
+Argumento: Um valor passado para um método.
+
+-Problema:
+Ao criar um objeto da classe Funcionario,
+era necessário passar o nome do funcionário,
+mas a classe Pessoa, da qual Funcionario herda,
+também possui um construtor que exige o nome.
+Isso gerava um erro de compilação.
+
+-Solução:
+Criar um construtor na classe Funcionario:
+
+Este construtor deve chamar o construtor da superclasse
+(Pessoa) para inicializar o nome do funcionário.
+É possível passar argumentos adicionais para o
+construtor da superclasse.
+Remover a chamada explícita para o construtor
+da superclasse na classe Pessoa:
+
+A JVM já chama o construtor da superclasse
+implicitamente quando um objeto da subclasse é criado.
+
+-Exemplo:
+class Pessoa {
+    private String nome;
+
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}
+
+class Funcionario extends Pessoa {
+    public Funcionario(String nome) {
+        super(nome); // Chamando o construtor da superclasse
+    }
+}
+
+-Observações:
+A regra geral é que, se uma subclasse não redefine um
+construtor da superclasse, a JVM chama o construtor da
+superclasse implicitamente.
+É importante seguir a ordem de inicialização dos atributos
+na herança, garantindo que os objetos sejam inicializados
+corretamente.
+O uso de comentários no código pode ajudar a melhorar a
+legibilidade e compreensão do código.
 
 =============================================================================
 
+75 - Orientação Objetos - Herança pt 05 - Sequência de inicialização
+
+Conceitos chave:
+
+Herança: Mecanismo que permite que uma classe herde atributos e
+métodos de outra classe.
+Bloco de inicialização estático: Bloco de código executado
+apenas uma vez quando a classe é carregada na memória.
+Bloco de inicialização de não inicialização: Bloco de código executado
+para cada objeto criado da classe.
+Construtor: Método especial responsável por inicializar os atributos
+do objeto.
+Atributo de classe: Variável declarada dentro de uma classe e
+acessível por todos os objetos da classe.
+
+-A principal diferença na inicialização de objetos em classes com
+herança é que a classe pai precisa ser inicializada antes
+da classe filha. Isso ocorre porque os atributos e métodos da
+classe pai são usados pela classe filha, e portanto,
+precisam estar disponíveis antes que a classe filha possa ser inicializada.
+
+-A ordem de inicialização em uma classe com herança é a seguinte:
+
+Bloco de inicialização estático da classe pai:
+Executado apenas uma vez quando a classe pai é carregada na memória.
+Bloco de inicialização estático da classe filha:
+Executado apenas uma vez quando a classe filha é carregada na memória.
+Atributos de classe da classe pai:
+Inicializados com seus valores padrão.
+Construtor da classe pai:
+Executado para inicializar os objetos da classe pai.
+Atributos de classe da classe filha:
+Inicializados com seus valores padrão.
+Construtor da classe filha:
+Executado para inicializar os objetos da classe filha.
 
 
 =============================================================================
