@@ -1507,7 +1507,57 @@ System.out.println("Atenção! Operação não finalizada.");
 
 =============================================================================
 
+77 - Orientação Objetos - Modificador final pt 01 - Tipo primitivo
 
+-O que são constantes?
+Constantes são variáveis que não podem ter seu valor alterado após
+a inicialização. Elas são úteis para representar valores que
+nunca mudam, como o número Pi (3,14159) ou a
+velocidade da luz (299.792.458 m/s).
+
+-CONVENÇÃO: LETRAS MAIÚSCULAS E COM UNDERLINE CASO SEJAM MAIS DE UMA PALAVRA.
+-Geralmente vem acompanhada do método static anteriormente.
+Exemplo: public static final double VELOCIDADE_LIMITE = 250;
+
+-Declarando constantes com o modificador final
+No Java, o modificador final é usado para declarar constantes.
+A palavra-chave final deve ser colocada antes do tipo de dado e
+do nome da variável, seguida pelo valor inicial.
+Por exemplo:
+final int VELOCIDADE_LIMITE = 250;
+
+-Vantagens de usar constantes:
+Melhora a legibilidade do código: As constantes tornam o código mais
+fácil de entender, pois indicam claramente quais valores não devem ser
+alterados.
+Evita erros: Impede que o valor de uma variável seja alterado
+acidentalmente, o que pode causar bugs no programa.
+Aumenta a segurança do código: Dificulta a modificação não intencional
+de valores importantes, o que pode levar a problemas de segurança.
+
+-Limitações das constantes:
+Somente tipos primitivos: O modificador final só pode ser usado com tipos
+primitivos (como int, float, boolean etc.). Para declarar constantes de
+referência (como objetos), é necessário usar outras técnicas,
+como classes imutáveis.
+Inicialização obrigatória: As constantes devem ser inicializadas no
+momento da declaração. Não é possível declarar uma constante sem fornecer
+um valor inicial.
+
+-Dicas para usar constantes:
+Use nomes descritivos: Escolha nomes que expliquem claramente o
+significado da constante.
+Agrupe constantes relacionadas: Armazene constantes relacionadas em
+um único local, como um arquivo ou classe separada.
+Utilize documentação: Documente as constantes para explicar seu propósito
+e uso.
+
+-Conclusão:
+O modificador final é uma ferramenta valiosa para declarar constantes
+em Java. As constantes melhoram a legibilidade, segurança e
+confiabilidade do código, além de evitar erros. Ao usar o
+modificador final de forma eficaz, você pode escrever código mais
+robusto e fácil de manter.
 
 =============================================================================
 
