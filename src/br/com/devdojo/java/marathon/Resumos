@@ -1561,10 +1561,81 @@ robusto e fácil de manter.
 
 =============================================================================
 
+78 - Orientação Objetos - Modificador final pt 02 - Tipo referência
 
+--Tópicos principais:
+-Modificador final em objetos:
+O modificador final garante que a referência de um objeto nunca seja
+alterada após a inicialização.
+Isso significa que você não pode atribuir um novo objeto à variável
+que referencia o objeto original.
+O modificador final é útil para criar objetos imutáveis, como constantes
+ou singletons.
+-Utilização do modificador final em classes:
+O modificador final pode ser aplicado a classes para evitar que sejam
+subclasseadas.
+Isso significa que você não pode criar novas classes que herdem da
+classe original.
+O modificador final é útil para classes que representam entidades
+imutáveis ou singletons.
+
+-Exemplos de utilização do modificador final:
+O vídeo demonstra como usar o modificador final em objetos e classes Java.
+São apresentados exemplos de como o modificador final pode ser
+usado para criar objetos imutáveis e singletons.
+O vídeo também discute os benefícios e desvantagens de
+usar o modificador final.
+
+-Conclusão:
+O modificador final é uma ferramenta poderosa em Java que pode ser
+usada para criar objetos e classes imutáveis.
+É importante entender os prós e contras de usar o modificador final
+antes de aplicá-lo em seu código.
 
 =============================================================================
 
+79 - Orientação Objetos - Modificador final pt 03 - Classes e métodos
 
+O que é o modificador final?
+O modificador final é utilizado para restringir a extensibilidade de
+classes e a sobreposição de métodos. Quando aplicado a uma classe,
+impede que ela seja herdada por outras classes. Já quando aplicado a
+um método, impede que ele seja sobrescrito em subclasses.
+
+-Classes final:
+São úteis quando o comportamento da classe não deve ser alterado por
+subclasses.
+Exemplo: a classe String em Java é final para garantir a imutabilidade
+das strings.
+Evita a criação de classes incompatíveis com o comportamento original
+da classe base.
+
+-Métodos final:
+Impedem a modificação do comportamento do método em subclasses.
+Garantem a consistência do comportamento do método em toda a aplicação.
+Úteis quando o método realiza uma ação específica que não deve ser alterada.
+Diferenças entre classes e métodos final:
+
+Classes final impedem a herança, enquanto métodos final impedem a
+sobreposição.
+O modificador final em classes é mais restritivo, pois limita a
+criação de novas classes com base na classe original.
+
+-Observações importantes:
+O uso do modificador final em métodos é menos comum, pois geralmente a
+herança é mais utilizada para modificar o comportamento de métodos.
+É importante avaliar cuidadosamente a necessidade de utilizar o
+modificador final antes de aplicá-lo, pois ele pode restringir a
+flexibilidade do código.
+
+-Conclusão:
+O modificador final é uma ferramenta poderosa para controlar a
+extensibilidade de classes e a sobreposição de métodos em Java.
+Seu uso adequado garante a consistência e previsibilidade do código,
+mas deve ser feito com cautela para evitar restrições desnecessárias.
+
+Links Úteis:
+Documentação oficial do Java sobre o modificador final:
+https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#FINAL
 
 =============================================================================
