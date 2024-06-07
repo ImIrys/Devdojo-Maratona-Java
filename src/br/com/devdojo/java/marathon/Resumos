@@ -1639,3 +1639,55 @@ Documentação oficial do Java sobre o modificador final:
 https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#FINAL
 
 =============================================================================
+
+80 - Orientação Objetos - Enumeração pt 01 - Introdução
+
+-O que são interfaces?
+Interfaces definem um conjunto de métodos que classes devem implementar.
+Elas fornecem um contrato entre classes, garantindo que todas as classes
+que implementam a interface sigam o mesmo comportamento para os métodos
+definidos.
+
+-Modificador final em interfaces:
+O modificador final pode ser aplicado a métodos e constantes em interfaces.
+Quando aplicado a um método, impede que ele seja sobrescrito em classes
+que implementam a interface.
+Quando aplicado a uma constante, garante que seu valor não possa ser
+alterado em classes que implementam a interface.
+
+-Vantagens do modificador final em interfaces:
+Promove consistência: Garante que todas as classes que implementam a
+interface sigam o mesmo comportamento para os métodos final.
+Evita implementações incorretas: Impede que classes sobrescrevam métodos
+final de forma incorreta, preservando o contrato da interface.
+Melhora a legibilidade: Indica que o método ou constante não pode ser
+alterado, tornando o código mais claro e fácil de entender.
+
+-Exemplo:
+A interface Animal define um método comer(). Se o método for declarado
+como final, ele não poderá ser sobrescrito em classes como Cachorro ou
+Gato, garantindo que todas as classes que implementam a interface Animal
+sigam o mesmo comportamento para o método comer().
+
+-Observações:
+O uso do modificador final em interfaces é mais comum em métodos do que
+em constantes.
+É importante avaliar a necessidade de utilizar o modificador final antes
+de aplicá-lo, pois ele pode restringir a flexibilidade das classes que
+implementam a interface.
+
+-Conclusão:
+O modificador final é uma ferramenta útil para promover consistência,
+evitar implementações incorretas e melhorar a legibilidade em
+interfaces Java. Seu uso adequado garante a previsibilidade do
+comportamento das classes que implementam a interface, mas deve ser
+feito com cautela para evitar restrições desnecessárias.
+
+=============================================================================
+
+
+=============================================================================
+
+=============================================================================
+
+=============================================================================
