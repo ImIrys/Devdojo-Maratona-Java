@@ -1685,8 +1685,117 @@ feito com cautela para evitar restrições desnecessárias.
 
 =============================================================================
 
+81 - Orientação Objetos - Enumeração pt 02 - Construtores e atributos
+
+E numerações, também conhecidas como enums, são um tipo especial de
+classe em Java que permite definir um conjunto de constantes nomeadas.
+Essas constantes representam valores fixos e imutáveis, facilitando
+a organização e legibilidade do código.
+
+-Criando uma enumeração:
+Para criar uma enumeração, utilize a palavra-chave enum seguida do
+nome da enumeração e das constantes entre chaves.
+Cada constante deve ter um nome único e pode ser opcionalmente
+acompanhada de um valor.
+
+enum TipoCliente {
+  FISICA(1), JURIDICA(2);
+
+  private final int valor;
+
+  TipoCliente(int valor) {
+    this.valor = valor;
+  }
+
+  public int getValor() {
+    return valor;
+  }
+}
+
+-Construtores em enumerações:
+Construtores em enumerações são métodos especiais que inicializam
+os valores das constantes. Eles podem ser utilizados para definir
+valores específicos para cada constante, como no exemplo acima.
+
+-Atributos em enumerações:
+Atributos em enumerações são variáveis associadas às constantes.
+Eles podem ser utilizados para armazenar informações adicionais
+sobre cada constante, como no exemplo do valor que representa o
+tipo de cliente (física ou jurídica).
+
+-Vantagens de usar enumerações:
+Organização: Enumerações facilitam a organização do código, agrupando
+valores relacionados em um único local.
+Legibilidade: O uso de nomes descritivos para as constantes torna o
+código mais legível e autoexplicativo.
+Segurança: Enumerações garantem que apenas valores válidos sejam
+utilizados, evitando erros de digitação e inconsistências.
+Manutenção: Mudanças nos valores das constantes são centralizadas na
+enumeração, facilitando a manutenção do código.
+
+-Aplicações de enumerações:
+Representar estados de um objeto (por exemplo, ATIVO, INATIVO, SUSPENSO).
+Definir tipos de dados (por exemplo, TAMANHO_CAMISA, COR_PRODUTO).
+Configurar opções de menu (por exemplo, SALVAR, CANCELAR, IMPRIMIR).
 
 =============================================================================
+
+82 - Orientação Objetos - Enumeração pt 03 - Sobrescrita de métodos
+
+-Sobrescrita de métodos em enumerações Java
+
+-O que é sobrescrita de métodos?
+A sobrescrita de métodos é um recurso da Orientação a Objetos que
+permite que subclasses redefinam a implementação de métodos herdados
+de suas classes superclasses. Isso possibilita personalizar o
+comportamento de métodos específicos para atender às necessidades
+de cada subclasse.
+
+-Sobrescrita de métodos em enumerações:
+Embora menos comum do que em classes, a sobrescrita de métodos também
+é possível em enumerações Java. Isso significa que métodos definidos
+em uma interface de enumeração podem ser redefinidos em enumerações
+que implementam essa interface.
+
+-Vantagens da sobrescrita de métodos em enumerações:
+
+Flexibilidade: Permite adaptar o comportamento de métodos específicos
+para cada enumeração, tornando o código mais flexível e reutilizável.
+Especialização: Possibilita especializar o comportamento de métodos
+para atender às necessidades específicas de cada tipo de enumeração.
+
+-Exemplo:
+Considere uma interface de enumeração Animal com um método comer():
+
+interface Animal {
+  void comer();
+}
+
+Duas enumerações, Cachorro e Gato, podem implementar a interface Animal
+e sobrescrever o método comer() para definir comportamentos específicos
+para cada tipo de animal:
+
+enum Cachorro implements Animal {
+  @Override
+  public void comer() {
+    System.out.println("O cachorro come ração.");
+  }
+}
+
+enum Gato implements Animal {
+  @Override
+  public void comer() {
+    System.out.println("O gato come peixe.");
+  }
+}
+
+-Observações:
+A sobrescrita de métodos em enumerações deve ser utilizada com cuidado,
+pois pode tornar o código mais complexo e difícil de manter.
+É importante avaliar cuidadosamente a necessidade de sobrescrever um
+método antes de fazê-lo, pois isso pode afetar o comportamento geral
+da enumeração e das classes que a utilizam.
+
 
 =============================================================================
 
