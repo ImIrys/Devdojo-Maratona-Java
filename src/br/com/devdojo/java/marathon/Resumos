@@ -1799,4 +1799,171 @@ da enumeração e das classes que a utilizam.
 
 =============================================================================
 
+83 - Orientação Objetos - Enumeração pt 04 - Busca por atributos
+
+-O que são enumerações?
+Enumerações, também conhecidas como enums, são tipos especiais em
+Java que definem um conjunto de constantes nomeadas.
+Essas constantes representam valores fixos e imutáveis,
+facilitando a organização e legibilidade do código.
+
+-Atributos em enumerações:
+Atributos em enumerações são variáveis associadas às constantes.
+Eles podem ser utilizados para armazenar informações adicionais sobre
+cada constante, como valores numéricos, strings ou outros objetos.
+
+-Exemplo:
+enum TipoCliente {
+  FISICA(1, "Cliente Físico"), JURIDICA(2, "Cliente Jurídico");
+
+  private final int codigo;
+  private final String descricao;
+
+  TipoCliente(int codigo, String descricao) {
+    this.codigo = codigo;
+    this.descricao = descricao;
+  }
+
+  public int getCodigo() {
+    return codigo;
+  }
+
+  public String getDescricao() {
+    return descricao;
+  }
+}
+
+-Busca por atributos em enumerações:
+A busca por atributos em enumerações pode ser realizada de
+diversas maneiras:
+
+Usando o método valueOf(): Este método recebe uma string como parâmetro
+e retorna a constante da enumeração que corresponde ao nome da string.
+Se a string não corresponder a nenhuma constante,
+uma exceção IllegalArgumentException é lançada.
+
+TipoCliente tipoCliente = TipoCliente.valueOf("FISICA");
+System.out.println(tipoCliente.getCodigo()); // Imprime 1
+
+-Usando um switch-case:
+Uma estrutura switch-case pode ser utilizada para analisar o valor
+de um atributo de enumeração e executar diferentes ações para cada valor.
+
+TipoCliente tipoCliente = TipoCliente.JURIDICA;
+
+switch (tipoCliente) {
+  case FISICA:
+    System.out.println("Cliente Físico");
+    break;
+  case JURIDICA:
+    System.out.println("Cliente Jurídico");
+    break;
+}
+
+-Usando streams:
+Streams Java podem ser utilizados para processar coleções de
+enumerações e realizar operações como filtrar, ordenar e buscar por
+atributos específicos.
+
+List<TipoCliente> clientes = Arrays.asList(TipoCliente.FISICA,
+TipoCliente.JURIDICA);
+
+clientes.stream()
+  .filter(tipo -> tipo.getCodigo() == 1) // Filtra por código 1
+  .forEach(tipo -> System.out.println(tipo.getDescricao())); // Imprime "Cliente Físico"
+
+-Observações:
+A escolha do método de busca depende do contexto específico e da
+quantidade de dados a serem processados.
+É importante utilizar técnicas de busca eficientes para evitar problemas
+de performance, especialmente em grandes conjuntos de dados.
+
+=============================================================================
+
+84 - Orientação Objetos - Classes abstratas pt 01
+
+-O que são classes abstratas?
+Classes abstratas são classes que servem como base para outras classes,
+definindo características e comportamentos comuns que serão herdados
+pelas classes filhas. Elas não podem ser instanciadas diretamente,
+mas fornecem um modelo para a criação de objetos concretos.
+
+-Características de classes abstratas:
+Contém métodos abstratos: Métodos abstratos são métodos sem implementação
+definida na classe abstrata. As classes filhas devem implementar esses
+métodos para fornecer a lógica específica de cada um.
+Podem conter métodos concretos: Classes abstratas podem conter métodos
+concretos com implementação completa, que serão herdados pelas classes filhas.
+Não podem ser instanciadas: É impossível criar objetos diretamente
+a partir de uma classe abstrata.
+Funcionam como um modelo: Classes abstratas fornecem um modelo para
+as classes filhas, definindo a estrutura e os comportamentos básicos
+que devem ser seguidos.
+
+-Exemplo:
+Considere uma classe abstrata Animal que define características comuns
+a todos os animais:
+
+abstract class Animal {
+  private String nome;
+  private int idade;
+
+  public Animal(String nome, int idade) {
+    this.nome = nome;
+    this.idade = idade;
+  }
+
+  public abstract void comer(); // Método abstrato
+
+  public String getNome() {
+    return nome;
+  }
+
+  public int getIdade() {
+    return idade;
+  }
+}
+
+Classes filhas, como Cachorro e Gato, herdam da classe abstrata
+Animal e implementam o método abstrato comer():
+
+class Cachorro extends Animal {
+  public Cachorro(String nome, int idade) {
+    super(nome, idade);
+  }
+
+  @Override
+  public void comer() {
+    System.out.println("O cachorro " + getNome() + " come ração.");
+  }
+}
+
+class Gato extends Animal {
+  public Gato(String nome, int idade) {
+    super(nome, idade);
+  }
+
+  @Override
+  public void comer() {
+    System.out.println("O gato " + getNome() + " come peixe.");
+  }
+}
+
+-Vantagens de usar classes abstratas:
+Organização: Promovem organização do código, agrupando características
+e comportamentos comuns em um único local.
+Reutilização: Permitem a reutilização de código, evitando duplicação e
+facilitando a manutenção.
+Abstração: Escondem detalhes de implementação, focando nas características
+essenciais e fornecendo uma visão mais abstrata do problema.
+
+=============================================================================
+
+
+=============================================================================
+
+
+=============================================================================
+
+
 =============================================================================
