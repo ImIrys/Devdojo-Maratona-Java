@@ -1959,8 +1959,79 @@ essenciais e fornecendo uma visão mais abstrata do problema.
 
 =============================================================================
 
+85 - Orientação Objetos - Classes abstratas pt 02 - Métodos abstratos
 
+-Relembrando o que são classes abstratas:
+Classes abstratas servem como base para outras classes, definindo
+características e comportamentos comuns que serão herdados pelas
+classes filhas. Elas não podem ser instanciadas diretamente, mas
+fornecem um modelo para a criação de objetos concretos.
+
+-O que são métodos abstratos?
+Métodos abstratos são métodos sem implementação definida na classe
+abstrata. As classes filhas devem implementar esses métodos para fornecer
+a lógica específica de cada um. Isso garante que todas as classes que
+herdam da classe abstrata forneçam os comportamentos mínimos esperados.
+
+-Características de métodos abstratos:
+Não possuem implementação: A definição do método abstrato apenas contém
+a assinatura (nome, retorno e parâmetros). A lógica de implementação
+deve ser fornecida pelas classes filhas.
+São declarados com a palavra-chave abstract: Essa palavra-chave indica
+que o método não possui implementação e deve ser implementado pelas
+classes filhas.
+Todas as classes filhas devem implementar os métodos abstratos: Se
+uma classe filha não implementar um método abstrato herdado, ela se
+torna uma classe abstrata também.
+Permitem a abstração: Escondem detalhes de implementação específicos,
+focando no comportamento geral que deve ser seguido pelas classes filhas.
+
+-Exemplo:
+-Considere a classe abstrata Animal com um método abstrato comer():
+
+abstract class Animal {
+  // ... (outros métodos e atributos)
+
+  public abstract void comer(); // Método abstrato
+}
+
+-Classes filhas como Cachorro e Gato devem implementar o método comer():
+
+class Cachorro extends Animal {
+  // ... (outros métodos e atributos)
+
+  @Override
+  public void comer() {
+    System.out.println("O cachorro come ração.");
+  }
+}
+
+class Gato extends Animal {
+  // ... (outros métodos e atributos)
+
+  @Override
+  public void comer() {
+    System.out.println("O gato come peixe.");
+  }
+}
+
+-Observações:
+Métodos abstratos só podem ser declarados em classes abstratas ou interfaces.
+Uma classe abstrata pode conter métodos abstratos e concretos.
+Classes filhas podem herdar e redefinir métodos concretos da classe abstrata.
+
+-Conclusão:
+Métodos abstratos em classes abstratas em Java são ferramentas essenciais
+para definir comportamentos comuns que devem ser implementados por
+classes filhas, promovendo organização, reutilização e abstração no
+código.
+Métodos abstratos não tem corpo e á partir do momento que coloco esse método,
+é obrigatório prover a implementação nas subclasses.
+Utilizar esse método quando requer uma funcionalidade para deletar funcionários
 =============================================================================
+
+
+
 
 
 =============================================================================
