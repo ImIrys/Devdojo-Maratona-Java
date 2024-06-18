@@ -7,8 +7,10 @@ import br.com.devdojo.java.marathon.javacore.Lclassesabstratas.domain.Gerente;
 public class FuncionarioTest01 {
     public static void main(String[] args) {
         Gerente gerente = new Gerente("Ellora", 10000);
-        Desenvolvedor dev1 = new Desenvolvedor("Irys", 15000);
+        Desenvolvedor desenvolvedor = new Desenvolvedor("Irys", 15000);
         System.out.println(gerente);
-        System.out.println(dev1);
+        System.out.println(desenvolvedor);
+        gerente.imprime();
+        desenvolvedor.imprime();
     }
 }

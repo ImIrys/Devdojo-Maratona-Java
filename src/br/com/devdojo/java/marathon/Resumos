@@ -2030,8 +2030,52 @@ Métodos abstratos não tem corpo e á partir do momento que coloco esse método
 Utilizar esse método quando requer uma funcionalidade para deletar funcionários
 =============================================================================
 
+86 - Orientação Objetos - Classes abstratas pt 03 - Métodos abstratos regras
 
+-O que são classes abstratas?
+Classes abstratas servem como modelos para outras classes,
+definindo características e comportamentos comuns. Elas não podem ser
+instanciadas diretamente, mas servem como base para classes filhas
+que as implementam e as extendem.
 
+O que são métodos abstratos?
+
+Métodos abstratos são métodos declarados em classes abstratas,
+mas sem implementação. As classes filhas que herdam da classe abstrata
+precisam implementar esses métodos para fornecer funcionalidade completa.
+
+-Regras importantes:
+Uma classe abstrata pode conter métodos abstratos e concretos.
+Uma classe concreta deve implementar todos os métodos abstratos
+herdados de suas classes abstratas ancestrais.
+Uma classe abstrata pode herdar de outra classe abstrata.
+Uma classe não pode herdar de mais de uma classe concreta.
+
+-Exemplo:
+No vídeo, as classes Funcionario, Gerente e Desenvolvedor são
+utilizadas para ilustrar os conceitos. Funcionario é uma classe
+abstrata com um método abstrato imprimir(). As classes filhas Gerente
+e Desenvolvedor herdam de Funcionario e implementam o método imprimir()
+de acordo com suas necessidades específicas.
+
+-Benefícios do uso de classes abstratas:
+Promovem reuso de código.
+Facilitam a organização do código.
+Permitem a criação de estruturas hierárquicas de classes.
+Fornecem flexibilidade para diferentes implementações.
+Diferenças entre classes abstratas e interfaces:
+
+Classes abstratas podem conter métodos abstratos e concretos,
+enquanto interfaces só podem conter métodos abstratos.
+Classes abstratas podem herdar de outras classes, enquanto
+interfaces não podem.
+Uma classe pode herdar de uma classe abstrata e implementar uma
+interface ao mesmo tempo.
+
+-Conclusão:
+Classes abstratas e métodos abstratos são ferramentas valiosas
+em Orientação a Objetos, permitindo a criação de estruturas de
+classes flexíveis e reutilizáveis.
 
 
 =============================================================================
