@@ -2080,5 +2080,58 @@ classes flexíveis e reutilizáveis.
 
 =============================================================================
 
+87 - Orientação Objetos - Interfaces pt 01 - Introdução
+
+-O que são interfaces?
+Interfaces definem um conjunto de métodos que classes devem implementar,
+sem fornecer a implementação em si. Elas servem como contratos entre
+classes, garantindo que todas as classes que as implementam forneçam
+os métodos necessários.
+
+-Regras importantes:
+Uma interface só pode conter métodos abstratos.
+Uma classe pode implementar várias interfaces.
+Uma classe não pode herdar de uma interface.
+Uma interface pode herdar de outras interfaces.
+
+-Exemplo:
+No vídeo, a interface FormaGeometrica é utilizada para ilustrar
+os conceitos. Ela define o método abstrato calcularArea(),
+que todas as classes que a implementam devem fornecer.
+As classes Quadrado, Circulo e Triangulo implementam a
+interface FormaGeometrica e fornecem suas próprias implementações
+para o método calcularArea().
+
+-Benefícios do uso de interfaces:
+Promovem polimorfismo, permitindo que diferentes classes implementem
+os mesmos métodos de maneiras distintas.
+Facilitam o desacoplamento entre classes, tornando o código mais
+flexível e reutilizável.
+Permitem a criação de sistemas mais extensíveis e adaptáveis.
+Diferenças entre interfaces e classes abstratas:
+
+Interfaces só podem conter métodos abstratos, enquanto classes
+abstratas podem conter métodos abstratos e concretos.
+Classes abstratas podem herdar de outras classes, enquanto
+interfaces não podem.
+Uma classe pode herdar de uma classe abstrata e implementar uma
+interface ao mesmo tempo.
+
+
+
+
+=============================================================================
+
+
+
+=============================================================================
+
+
+
+
+=============================================================================
+
+
+
 
 =============================================================================
